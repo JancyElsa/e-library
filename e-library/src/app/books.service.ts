@@ -21,6 +21,8 @@ export class BooksService {
   //   return this.http.delete<Ibook>('http://localhost:3000/categories',id)
 
   // }
-
+updateBook(body:Ibook):Observable<Ibook>{
+  return this.http.put<Ibook>('http://localhost:3000/categories',body)
+}
  
 }

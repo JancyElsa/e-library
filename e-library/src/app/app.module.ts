@@ -8,9 +8,10 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { AdminAddBookComponent } from './admin-add-book/admin-add-book.component'
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { AdminSearchComponent } from './admin-search/admin-search.component';
 import { HomeComponent } from './home/home.component'
+import { CommonInterceptor } from './common.interceptor';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,7 @@ import { HomeComponent } from './home/home.component'
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{provide:HTTP_INTERCEPTORS,useClass:CommonInterceptor,multi:true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
