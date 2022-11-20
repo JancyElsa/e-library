@@ -1,0 +1,87 @@
+{
+  "categories": [
+    {
+      "bookId": 1,
+      "bookTitle": "success",
+      "bookDescription": "success stories of leaders",
+      "authorName": "Felix",
+      "availBooks": 10
+    },
+    {
+      "bookId": 2,
+      "bookTitle": "failure",
+      "bookDescription": "failure",
+      "authorName": "raja",
+      "availBooks": 5
+    },
+    {
+      "bookId": 3,
+      "bookTitle": "dark",
+      "bookDescription": "dark stories of leaders",
+      "authorName": "henry",
+      "availBooks": 10
+    },
+    {
+      "bookId": 4,
+      "bookTitle": "light",
+      "bookDescription": "light stories of leaders",
+      "authorName": "lucky",
+      "availBooks": 10
+    }
+  
+  ],
+  "register": [
+    {
+      "firstname": "jancy",
+      "lastname": "juli",
+      "email": "jancyjuli1112@gmail.com",
+      "password":"jancy"
+    }],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "bookId": 1,
+      "bookTitle": "success",
+      "bookDescription": "success stories of leaders",
+      "authorName": "Felix",
+      "availBooks": 10
+    },
+    {
+      "bookId": 2,
+      "bookTitle": "failure",
+      "bookDescription": "failure",
+      "authorName": "raja",
+      "availBooks": 5
+    },
+    {
+      "bookId": 3,
+      "bookTitle": "dark",
+      "bookDescription": "dark stories of leaders",
+      "authorName": "henry",
+      "availBooks": 10
+    },
+    {
+      "bookId": 4,
+      "bookTitle": "light",
+      "bookDescription": "light stories of leaders",
+      "authorName": "lucky",
+      "availBooks": 10
+    }
+    
+    
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

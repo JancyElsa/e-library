@@ -1,0 +1,50 @@
+<div class="main">
+    <div class="root1">
+        <div class="nav">
+            <button (click)="swap1()" id="login" [ngStyle]="{'background-color':Issingup!=true?'rgb(0, 255, 0)':'rgba(0, 128, 0, 0.61)'}">Login</button>
+            <button (click)="swap2()" id="sign" [ngStyle]="{'background-color':Issingup==true?'rgb(255, 0, 0)':'rgba(255, 0, 0, 0.63)'}">Sign In</button>
+        </div>
+        <div *ngIf="Issingup==true;then signup else login"></div>
+        <ng-template #login>
+            <div class="sub-root2">
+                <form [formGroup]="pagel">
+                <br>
+                <label for="fname">User Name</label><br>
+                <input type="text" id="fname1" placeholder="First Name" name="firstname" formControlName="firstname">
+                <br>
+
+                <label for="pwd1">Password</label><br>
+                <input type="password" id="pwd1" placeholder="Enter Password" name="pws" formControlName="pws">
+                <br>
+
+                <button [disabled]="!this.pagel.valid" (click)="getpwd()">Login</button>
+                </form>
+            </div>
+        </ng-template>
+        <ng-template #signup>
+            <div class="sub-root1">
+                <form [formGroup]="pageL1">
+
+                <br>
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" placeholder="First Name" name="firstname1" formControlName="firstname1">
+                <br>
+
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" placeholder="Last Name" name="lastname" formControlName="lastname">
+                <br>
+
+                <label for="email">Email address</label><br>
+                <input type="email" id="email" placeholder="Enter Email" name="email" formControlName="email">
+                <br>
+
+                <label for="pwd2">Password</label><br>
+                <input type="password" id="pwd2" placeholder="Enter Password" name="pwd" formControlName="pwd">
+                <br>
+
+                <button [disabled]="!this.pageL1.valid">Sign Up</button>
+                </form>
+            </div>
+        </ng-template>
+    </div>
+</div>

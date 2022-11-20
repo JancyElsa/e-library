@@ -1,0 +1,33 @@
+<div class="main">
+    <div class="root1">
+        <ul>
+            <a routerLink="/Home" routerLinkActive="active"><li>Home</li></a>
+            <a routerLink="/Aboutpage" routerLinkActive="active"><li>About Library</li></a>
+            <a routerLink="/Rules" routerLinkActive="active"><li>Rules & Regulation</li></a>
+            <a routerLink="/Search" routerLinkActive="active"><li>Price Card</li></a>
+            <a routerLink="/Login" routerLinkActive="active" [ngStyle]="{'display':theadmin==false && theuser==false?'inline':'none'}"><li>Login</li></a>
+            <a routerLink="/Search" routerLinkActive="active" [ngStyle]="{'display':theadmin==true || theuser==true?'inline':'none'}"><li>Search</li></a>
+            <a routerLink="/Addbook" routerLinkActive="active" [ngStyle]="{'display':theadmin==true?'inline':'none'}"><li>Add Book</li></a>
+            <a (click)="signout()" style="cursor:pointer;" routerLinkActive="active" [ngStyle]="{'display':theadmin==true || theuser==true?'inline':'none'}"><li>Sign Out</li></a>
+        </ul>
+        <div id="cart">1</div>
+    </div>
+    <div class="bimg" (click)="change()">
+        <img src={{src}}>
+    </div>
+    <form [formGroup]="List" (change)="chpl()">
+        <select name="listval" formControlName="listval" id="selectlist">
+            <option value='1'>Ranjithame</option>
+            <option value='2'>Ratchasa Maamaney</option>
+            <option value='3'>Jalabulajangu</option>
+        </select>
+    </form>
+</div>
+<router-outlet (activate)="printsum($event)"></router-outlet>
+<div class="footuni">
+    <div class="imagefoot">
+        <h1>Library Mangement System</h1>
+        <p>Copyright &copy; 2022 Library.Inc</p>
+        <h4>Legel Stuff  |  Privary Policy  |  Security</h4>
+    </div>
+</div>

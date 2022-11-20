@@ -1,0 +1,94 @@
+.main .root1{
+    width: 1360px;
+    height: 45px;
+    background-color: #4d4746;
+}
+
+.main .root1 ul{
+    padding-top: 13px;
+}
+
+.main .root1 ul li:hover{
+    background-color: orange;
+
+}
+.main .root1 ul li{
+    display: inline;
+    margin: 18px;
+    padding: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    padding-top: 13px;
+    color: white;
+}
+.active{
+    background-color: orange;
+    padding-top: 13px;
+    padding-bottom: 15px;
+
+}
+.main .root1 ul a{
+    text-decoration: none;
+    
+}
+.footuni{
+    width: 1360px;
+    height: 155px;
+    background-color: #4d4746;
+}
+.footuni .imagefoot h1{
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    text-decoration: underline;
+}
+.footuni .imagefoot p,h4{
+    color: white;
+    text-align: center;
+}
+
+
+
+#cart{
+    width: 20px;
+    height: 18px;
+    background-color: red;
+    display: inline;
+    position: absolute;
+    top:14px;
+    color:white;
+    border-radius: 10px;
+    margin-left: 564px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.bimg{
+    width: 23px;
+    height: 23px;
+    background-color: white;
+    margin-left: 50px;
+    position: fixed;
+    display:inline-flex;
+    cursor: pointer;
+    top: 92vh;
+    left: 1100px;
+    border: 1px solid black;
+}
+#selectlist{
+    margin-left: 73px;
+    margin-top: 0px;
+    padding-top: 4px;
+    top: 92vh;
+    left: 1100px;
+    position: fixed;
+    display: inline-flex;
+    background-color: black;
+    color: white;
+}

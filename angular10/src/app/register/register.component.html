@@ -1,0 +1,63 @@
+<div class="container mt-5">
+    <form class="row g-3 form-container" [formGroup]="regForm" (ngSubmit)="onSubmit()">
+    <div class="col-md-6 px-4">
+        <label for="firstName" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="firstName" formControlName="firstname">
+      </div>
+      <div class="col-md-6 px-4">
+        <label for="lastName" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="lastName" formControlName="lastname">
+      </div>
+    <div class="col-12 px-4">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" formControlName="email">
+    </div>
+    <div class="col-md-6 form-check form-check-inline px-4">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+        <label class="form-check-label" for="inlineRadio1">Male</label>
+      </div>
+      <div class="col-md-6 form-check form-check-inline px-4">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">Female</label>
+      </div>
+      
+    <div class="col-md-6 px-4">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity" formControlName="city">
+      </div>
+      <div class="col-md-6 px-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select" formControlName="state">
+          <option selected>Tamilnadu</option>
+          <option>Kerala</option>
+          <option>AndhraPradesh</option>
+        </select>
+      </div>
+    <div class="col-md-6 px-4">
+      <label for="inputPassword1" class="form-label"> Create Password</label>
+      <input type="password" class="form-control" id="inputPassword1" formControlName="createpassword">
+    </div>
+    <div class="col-md-6 px-4">
+        <label for="inputPassword2" class="form-label"> Repeat Password</label>
+        <input type="password" class="form-control" id="inputPassword2" formControlName="repeatpassword">
+      </div>
+    <div class="col-12 px-4">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" formControlName="address">
+    </div>
+
+
+    <div class="col-12 px-4">
+      <button type="submit" class="btn btn-primary">Register</button>
+    </div>
+    <div class="col-12 px-4 mb-4">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck" formControlName="check">
+          <label class="form-check-label" for="gridCheck">
+            I am agree with terms and conditions
+          </label>
+        </div>
+      </div>
+  </form>
+</div>
+ <div>{{helo | json}}</div>

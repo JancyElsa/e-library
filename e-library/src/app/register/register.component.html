@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+    <div class="logo">
+      <img src="src/assets/image/library.jpg" class="img-fluid" alt="logo">
+  </div>
+    <form class="form-container rounded shadow bg-white p-5" [formGroup]="regForm">
+  <h3 class="text-dark fw-bolder fs-4 mb-2 text-center">Sign Up</h3>
+<div class="mb-3">
+    <label for="firstName" class="form-label">First name</label>
+    <input type="text" class="form-control" id="firstName" formControlName="firstname" [ngClass]="{'errTxt':(!regForm.controls.firstname.valid)&&(regForm.controls.firstname.touched)}">
+    <small *ngIf="(!regForm.controls.firstname.valid)&&(regForm.controls.firstname.dirty)" class="text-danger">*Firstname is required</small>
+  </div>
+  <div class="mb-3">
+    <label for="lastName" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="lastName" formControlName="lastname">
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="text" class="form-control" id="email" formControlName="email">
+    <small *ngIf="(!regForm.controls.email.valid)&&(regForm.controls.email.dirty)" class="text-danger">Your email will be a username</small>
+  </div>
+  <div class="mb-3">
+    <label for="pwd" class="form-label">Password</label>
+    <input type="password" class="form-control" id="pwd" formControlName="password" [ngClass]="{'errTxt':(!regForm.controls.password.valid)&&(regForm.controls.password.touched)}">
+    <small *ngIf="(!regForm.controls.password.valid)&&(regForm.controls.password.touched)" class="text-danger">password contains 10 characters,1 uppercase,1 number,1 special character</small>
+  </div>
+  <!-- <div class="mb-3">
+    <label for="Username" class="form-label">Username</label>
+    <input type="text" class="form-control" id="Username" formControlName="Username" [ngClass]="{'errTxt':(!regForm.controls.Username.valid)&&(regForm.controls.Username.touched)}">
+    <small *ngIf="(!regForm.controls.Username.valid)&&(regForm.controls.Username.dirty)" class="text-danger">*Firstname is required</small>
+  </div>
+  <div class="mb-3">
+    <label for="pwd" class="form-label">Password</label>
+    <input type="password" class="form-control" id="pwd" formControlName="Password" [ngClass]="{'errTxt':(!regForm.controls.password.valid)&&(regForm.controls.password.touched)}">
+    <small *ngIf="(!regForm.controls.password.valid)&&(regForm.controls.password.touched)" class="text-danger">password contains 10 characters,1 uppercase,1 number,1 special character</small>
+  </div>
+  <div>
+
+  <div class="mb-3">
+    <label for="Email" class="form-label">Email</label>
+    <input type="text" class="form-control" id="Email" formControlName="Email">
+    <small *ngIf="(!regForm.controls.email.valid)&&(regForm.controls.email.dirty)" class="text-danger">Your email will be a username</small>
+  </div>
+  <div class="mb-3">
+    <label for="phone" class="form-label">Phone</label>
+    <input type="number" class="form-control" id="Phone" formControlName="Phone">
+  </div> -->
+  
+    Already have an account?<a href="#" class="text-decoration-none">Login</a>
+  
+  <button type="button" class="btn btn-success w-100 mt-4" (click)="onSubmit()">Sign Up</button>
+
+</form>
+</div>
+</div>
+
+

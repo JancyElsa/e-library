@@ -1,0 +1,149 @@
+.outer .book h2{
+    display: inline-block;
+    margin: 0px;
+}
+.outer .book input{
+    margin-left: 20px;
+    width: 250px;
+    height: 40px;
+}
+
+.outer .tables table tr:hover{
+    background-color:rgba(255, 166, 0, 0.452);
+}
+.outer .book button{
+    margin-left: 185px;
+    margin-top: 20px;
+    width: 130px;
+    height: 45px;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    background-color: orange;
+}
+.outer .tables{
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 1270px;
+    height:390px;
+    border: 1px solid black;
+    overflow: scroll;
+}
+.outer .tables table{
+    width: 1250px;
+    height: auto;
+}
+.outer .tables th{
+    font-weight: bolder;
+    background-color: rgb(67, 201, 67);
+}
+.outer .tables th,td{
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+.edit{
+    width:510px;
+    height: 335px;
+    position: fixed;
+    top:25%;
+    left: 30%;
+    border-radius: 10px;
+    display: block;
+}
+.edit .root{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 10px;
+}
+.edit .root .head{
+    width:auto;
+    height:40px;
+    background-color: orange;
+    border-radius: 10px 10px 0px 0px;
+}
+.edit .root .head h2{
+    padding-top: 7px;
+    margin-left: 20px;
+    color: white;
+}
+.edit .root .body{
+    width: auto;
+    height: 275px;
+    background-color: #FFE87C;
+}
+.edit .root .foot{
+    width: auto;
+    height: 40px;
+    background-color: orange;
+    border-radius:0px 0px 10px 10px;
+}
+.edit .root .body label{
+    margin-left: 30px;
+}
+.edit .root .foot button:nth-child(1){
+    margin-left: 250px;
+    margin-top: 10px;
+}
+.edit .root .foot button:nth-child(2){
+    margin-left: 50px;
+}
+.delcon{
+    width: 430px;
+    height: 190px;
+    position: fixed;
+    top:30%;
+    left: 35%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;   
+}
+.delcon .header{
+    width: auto;
+    height: 35px;
+    background-color: orange;
+    border-bottom: 1px solid rgb(180, 177, 177);
+    border-radius: 10px 10px 0px 0px;
+}
+.delcon .body{
+    width: auto;
+    height: 120px;
+    background-color: #FFE87C;
+    border-bottom: 1px solid rgb(180, 177, 177);
+}
+.delcon .foot{
+    width: auto;
+    height: 35px;
+    background-color: orange;
+    border-radius: 0px 0px 10px 10px;
+}
+.delcon .header p{
+    margin: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.delcon .body p{
+    margin: 0px;
+    font-size: large;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.delcon .foot button:nth-child(1){
+    width: 52px;
+    height: 24px;
+    margin-left: 280px;
+    margin-top: 5px;
+    background-color: forestgreen;
+    color: white;
+    border: none;
+}
+.delcon .foot button:nth-child(2){
+    width: 52px;
+    height: 24px;
+    margin-left: 25px;
+    margin-top: 5px;
+    color: white;
+    background-color: red;
+    border: none;
+}
+.del .body p #delname{
+    font-size: small;
+}
