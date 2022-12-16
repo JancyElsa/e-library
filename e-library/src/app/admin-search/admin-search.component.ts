@@ -83,10 +83,18 @@ export class AdminSearchComponent implements OnInit {
       availBooks: book.availBooks
     });
 
+  
   }
+
+  
   onUpdate()
   {
-    this.bookService.updateBook(book).subscribe(data=>{
+    let bk:Ibook = this.addBookForm.value;
+    // bk = {
+    //   authorName:this.addBookForm.controls.authorName.value,
+
+    // }
+    this.bookService.updateBook(bk).subscribe(data=>{
       console.log(data);
     })
   }

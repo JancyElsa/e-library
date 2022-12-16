@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+
+      <form class="form-container rounded shadow bg-white p-5" [formGroup]="regForm">
+    <h3 class="text-dark fw-bolder fs-4 mb-2 text-center">Sign Up</h3>
+    <div class="mb-3">
+        <label for="empid" class="form-label">EmpID</label>
+        <input type="number" class="form-control" id="empid" formControlName="empid">
+    </div>
+  <div class="mb-3">
+      <label for="firstName" class="form-label">First name</label>
+      <input type="text" class="form-control" id="firstName" formControlName="firstname" [ngClass]="{'errTxt':(!regForm.controls.firstname.valid)&&(regForm.controls.firstname.touched || regForm.controls.firstname.dirty)}">
+      <small *ngIf="(!regForm.controls.firstname.valid)&&(regForm.controls.firstname.dirty || regForm.controls.firstname.touched )" class="text-danger">*Firstname is required</small>
+    </div>
+    <div class="mb-3">
+      <label for="lastName" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="lastName" formControlName="lastname">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" formControlName="email" [ngClass]="{'errTxt':(!regForm.controls.email.valid)&&(regForm.controls.email.touched || regForm.controls.email.dirty)}">
+      <small *ngIf="(!regForm.controls.email.valid)&&(regForm.controls.email.dirty || regForm.controls.email.touched)" class="text-danger">*Email is required</small>
+    </div>
+    <div class="mb-3">
+        <label for="designation" class="form-label">Designation</label>
+        <input type="text" class="form-control" id="designation" formControlName="designation" [ngClass]="{'errTxt':(!regForm.controls.designation.valid)&&(regForm.controls.designation.touched || regForm.controls.designation.dirty)}">
+        <small *ngIf="(!regForm.controls.designation.valid)&&(regForm.controls.designation.dirty || regForm.controls.designation.touched)" class="text-danger">*Designation is required</small>
+      </div>
+      <div class="mb-3">
+        <label for="salary" class="form-label">Salary</label>
+        <input type="number" class="form-control" id="salary" formControlName="salary" [ngClass]="{'errTxt':(!regForm.controls.salary.valid)&&(regForm.controls.salary.touched || regForm.controls.salary.dirty)}">
+        <small *ngIf="(!regForm.controls.salary.valid)&&(regForm.controls.salary.dirty || regForm.controls.salary.touched)" class="text-danger">*Salary is required</small>
+      </div>
+      <button type="button" class="btn btn-success w-100 mt-4">Sign Up</button>
+      </form>
+      </div>
+      </div>
+      
+
+

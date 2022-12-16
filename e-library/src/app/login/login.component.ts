@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {  FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ILogin } from '../Interfaces/ilogin';
 import { AuthService } from '../services/auth.service';
 
@@ -30,6 +30,7 @@ data:any;
       Password:this.loginForm.controls.Password.value
      }
   addLogin(){
+    this.loginForm.controls.value.markAsTouched();
     console.log(this.loginForm.value);
 this.authServ.signIn(this.body).subscribe(data=>{
   console.log(data);

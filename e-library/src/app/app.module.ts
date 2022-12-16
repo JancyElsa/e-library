@@ -12,6 +12,7 @@ import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { AdminSearchComponent } from './admin-search/admin-search.component';
 import { HomeComponent } from './home/home.component'
 import { CommonInterceptor } from './common.interceptor';
+import { BlueBackgroundDirective } from './blue-background.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { CommonInterceptor } from './common.interceptor';
     LoginComponent,
     AdminAddBookComponent,
     AdminSearchComponent,
-    HomeComponent
+    HomeComponent,
+    BlueBackgroundDirective
   ],
   imports: [
     BrowserModule,
